@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === TAILWIND CSS === -->
+    <script src="https://cdn.tailwindcss.com "></script>
+    <!-- === FONTAWESOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+    <!-- === GOOGLE FONTS LINK === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- === TAILWIND CONFIG FILE === -->
+     <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors:{
+                        body: '#fffff',
+                        btncolor:'',
+                    },
+                    fontFamily:{
+                        mont:['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+     </script>
+    <title>Photography</title>
+</head>
+<body class="bg-[#090925]">
+    <!-- ==== NAVBAR SECTION ==== -->
+     <nav class=" border-b border-b-gray-700">
+        <section class="max-w-[80%] mx-auto flex items-center justify-between bg-[#090925]">
+            <div class="brand-name">
+                <img class="w-40 justify-start flex items-start" src="/HTML/img/softcode.png" alt="">
+            </div>
+        <div class=" font-mont text-md flex justify-between items-center gap-4 px-4 py-6 text-white">
+                <a class="hover:text-[#93F2FF]" href="#">Home</a>
+                <a class="hover:text-[#93F2FF]" href="#">Service</a>
+                <a class="hover:text-[#93F2FF]" href="#">Portfolio</a>
+                <a class="hover:text-[#93F2FF]" href="#">My Skills</a>
+                <a class="hover:text-[#93F2FF]" href="#">Testimonials</a>
+                <a class="hover:text-[#93F2FF]" href="#">Blog</a>
+                <a class="hover:text-[#93F2FF]" href="#">Contact</a>
+                <a class="border border-blue-300 px-5 py-2 rounded-full hover:bg-[#93F2FF] hover:text-black" href="#">Let's Talk</a>
+                <a class="border border-blue-300 px-5 py-2 rounded-full hover:bg-[#93F2FF] hover:text-black" href="#">Buy Now</a>
+        </div>
+        </section>
+     </nav>
+     <i class="fa-solid fas fa-bars"></i>
+</body>
+</html>
