@@ -31,26 +31,24 @@
 </head>
 <body class="bg-[#090925]">
     <!-- ==== NAVBAR SECTION ==== -->
-     <nav class=" border-b border-b-gray-700">
-        <section class="max-w-[80%] mx-auto flex items-center justify-between bg-[#090925]">
-            <div class="brand-name">
-                <img class="w-40 justify-start flex items-start" src="/HTML/img/softcode.png" alt="">
+     <header class="relative border-b border-b-gray-500 px-4 py-2">
+        <div class="section sm:flex sm:container sm:justify-between sm:mx-auto ">
+            <div class="flex justify-between sm:w-sm">
+                <img class="w-40" src="/HTML/accests/img/softcode.png" alt="">
+                <button id="mobile_icon" class="text-white sm:hidden"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
-        <div class=" font-mont text-md flex justify-between items-center gap-4 px-4 py-6 text-white">
-                <a class="hover:text-[#93F2FF]" href="#">Home</a>
-                <a class="hover:text-[#93F2FF]" href="#">Service</a>
-                <a class="hover:text-[#93F2FF]" href="#">Portfolio</a>
-                <a class="hover:text-[#93F2FF]" href="#">My Skills</a>
-                <a class="hover:text-[#93F2FF]" href="#">Testimonials</a>
-                <a class="hover:text-[#93F2FF]" href="#">Blog</a>
-                <a class="hover:text-[#93F2FF]" href="#">Contact</a>
-                <a class="border border-blue-300 px-5 py-2 rounded-full hover:bg-[#93F2FF] hover:text-black" href="#">Let's Talk</a>
-                <a class="border border-blue-300 px-5 py-2 rounded-full hover:bg-[#93F2FF] hover:text-black" href="#">Buy Now</a>
+                <nav id="mobile_menu" class="absolute text-white flex flex-col bg-[#302C4A] w-full sm:w-1/2 top-12 left-0 text-center hidden sm:block sm:bg sm:relative sm:top-0 sm:flex sm:flex-row sm:justify-between sm:rounded-full sm:px-20">
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Home</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">About</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Services</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Porfolio</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Blog</a>
+                    <a class="py-2 hover:bg-[#090925] sm:hover:bg-transparent" href="#">Contact</a>
+                </nav>
+                <a class="text-white hidden sm:inline sm:w-sm sm:flex sm:justify-end sm:items-center sm:bg-[#93F2FF] sm:px-6 sm:rounded-full sm:text-[#090925] font-semibold text-lg" href="#">Hire me</a>
         </div>
-        </section>
-     </nav>
-     <i class="fa-solid fas fa-bars"></i>
-
-     <h1>git clone</h1>
+     </header>
+     <!-- === JS LINK === -->
+      <script src="/HTML/accests/js/index.js"></script>
 </body>
 </html>
