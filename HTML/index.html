@@ -32,22 +32,58 @@
 <body class="bg-[#090925]">
     <!-- ==== NAVBAR SECTION ==== -->
      <header class="relative border-b border-b-gray-500 px-4 py-2">
-        <div class="section sm:flex sm:container sm:justify-between sm:mx-auto ">
+        <div class="section sm:flex sm:w-[80%] sm:justify-between sm:mx-auto">
             <div class="flex justify-between sm:w-sm">
-                <img class="w-40" src="/HTML/accests/img/softcode.png" alt="">
+                <img class="w-40" src="/HTML/accests/img/softcode.png" alt="logo">
                 <button id="mobile_icon" class="text-white sm:hidden"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
-                <nav id="mobile_menu" class="absolute text-white flex flex-col bg-[#302C4A] w-full sm:w-1/2 top-12 left-0 text-center hidden sm:block sm:bg sm:relative sm:top-0 sm:flex sm:flex-row sm:justify-between sm:rounded-full sm:px-20">
+                <nav id="mobile_menu" class="absolute text-white flex flex-col bg-[#302C4A] w-full sm:w-3/4 top-12 left-0 text-center hidden sm:block sm:bg-transparent sm:relative sm:top-0 sm:flex sm:flex-row sm:justify-between sm:rounded-full">
                     <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Home</a>
-                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">About</a>
-                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Services</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Service</a>
                     <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Porfolio</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">My Skills</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Testimonials</a>
                     <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Blog</a>
-                    <a class="py-2 hover:bg-[#090925] sm:hover:bg-transparent" href="#">Contact</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg" href="#">Contact</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border sm:border-[#93F2FF] sm:rounded-full sm:px-4 sm:hover:bg-[#93F2FF] text-lg sm:hover:text-[#090925] hidden sm:inline sm:hover:transition-colors" href="#">Let's Talk</a>
+                    <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:bg-[#93F2FF] sm:hover:bg-[#93F2FF] text-lg sm:px-4 sm:rounded-full sm:text-[#090925] hidden sm:inline" href="#">Buy Now</a>
                 </nav>
-                <a class="text-white hidden sm:inline sm:w-sm sm:flex sm:justify-end sm:items-center sm:bg-[#93F2FF] sm:px-6 sm:rounded-full sm:text-[#090925] font-semibold text-lg" href="#">Hire me</a>
         </div>
      </header>
+
+     <!-- === HERO SECTION === -->
+     <section class="w-full sm:w-[80%] sm:h-[60vh] sm:flex sm:items-center sm:justify-between px-4 sm:mx-auto mt-10 sm:mt-8">
+        <div class="sm:w-[30%] sm:h-[50vh] bg-white hidden sm:block sm:flex sm:justify-end sm:shadow-2xl">
+            <img class="sm:w-auto" src="/HTML/accests/img/girl_photo.png" alt="">
+        </div>
+        <div class="text-center sm:w-full sm:relative">
+            <h1 class="text-white font-bold text-4xl leading-[3.5rem] sm:text-9xl sm:leading-[10rem]">I'm William Olivia <br> A <span class="text-[#93F2FF]">Photographer .</span></h1>
+            <div class="sm:flex sm:itemx-center sm:justify-center items-center mt-8 sm:gap-16">
+                <div class="flex items-center mt-2 text-center justify-center sm:flex-col">
+                    <h3 class="text-white font-semibold text-lg mr-2">Follow Me:</h3>
+                    <!-- === SOCIAL ICONS === -->   
+                    <div class="flex items-center gap-4 items-center justify-center sm:mt-4">
+                        <p class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"><i class="fa-brands fa-facebook-f"></i></p>
+                        <p class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"><i class="fa-brands fa-linkedin-in"></i></p>
+                        <p class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"><i class="fa-brands fa-twitter"></i></p>
+                        <p class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"><i class="fa-brands fa-instagram"></i></p>
+                    </div>
+                </div>
+                <div class="flex items-center mt-2 text-center justify-center sm:flex-col">
+                    <h3 class="text-white font-semibold text-lg mr-4">My Skills:</h3>
+                    <!-- ==== SKILLS ICON ==== -->
+                    <div class="flex items-center gap-4 items-center justify-center sm:mt-4">
+                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]" src="/HTML/accests/img/camera_one.png" alt="camera-img">
+                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]" src="/HTML/accests/img/camera_two.png" alt="camera-img">
+                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]" src="/HTML/accests/img/camera_three.png" alt="camera-img">
+                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]" src="/HTML/accests/img/camera_four.png" alt="camera-img">
+                    </div>
+                </div>
+            </div>
+            <div class="absolute sm:absolute sm:-top-20 top-10"><h1 class="sm:text-[#FFFFFF1A] text-[#FFFFFF1A] text-6xl sm:text-9xl">HI</h1></div>
+        </div>
+     </section>
+
      <!-- === JS LINK === -->
       <script src="/HTML/accests/js/index.js"></script>
 </body>
