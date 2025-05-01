@@ -1,0 +1,14 @@
+.hover-effects {
+    position: relative;
+}
+
+.hover-effects:hover::after {
+    top: 60px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    content: "";
+    position: absolute;
+    filter: blur(60px);
+    background: radial-gradient(circle, #9ceef9d2, transparent 90%);
+}
