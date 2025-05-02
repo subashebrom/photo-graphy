@@ -12,3 +12,16 @@
     filter: blur(60px);
     background: radial-gradient(circle, #9ceef9d2, transparent 90%);
 }
+.pricing-hvr-effects{
+    position: relative;
+}
+.pricing-hvr-effects:hover::before{
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    filter: blur(60px);
+    background: radial-gradient(circle, #9ceef9d2, transparent 80%);
+}
