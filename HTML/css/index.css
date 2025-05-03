@@ -25,3 +25,22 @@
     filter: blur(60px);
     background: radial-gradient(circle, #9ceef9d2, transparent 80%);
 }
+.awesome-effects{
+    position: relative;
+}
+.awesome-effects:hover::before{
+    right: 80px;
+    position: absolute;
+    content: "";
+    width: 800px;
+    height: 30px;
+    filter: blur(60px);
+    background: radial-gradient(circle, #9ceef9d2, transparent 80%);
+}
+@media(max-width: 768px){
+    .awesome-effects:hover::before{
+        left: -250px;
+        top: 170px;
+
+    }
+}
