@@ -1,932 +1,980 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- === CSS LINK === -->
-    <link rel="stylesheet" href="/HTML/css/index.css">
-    <!-- === TAILWIND CSS === -->
-    <script src="https://cdn.tailwindcss.com "></script>
-    <!-- === FONTAWESOME LINK === -->
-    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
-    <!-- === GOOGLE FONTS LINK === -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- === TAILWIND CONFIG FILE === -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        body: '#fffff',
-                        btncolor: '',
-                    },
-                    fontFamily: {
-                        mont: ['Montserrat', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <title>Photography</title>
-</head>
-
-<body class="bg-[#090925]">
-    <!-- ==== NAVBAR SECTION ==== -->
-    <header class=" relative border-b border-b-gray-500 px-4 py-2">
-        <div class="section sm:flex sm:w-[80%] sm:justify-between sm:mx-auto">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- === CSS LINK === -->
+      <link rel="stylesheet" href="/HTML/css/index.css">
+      <!-- === TAILWIND CSS === -->
+      <script src="https://cdn.tailwindcss.com "></script>
+      <!-- === FONTAWESOME LINK === -->
+      <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+      <!-- === GOOGLE FONTS LINK === -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet">
+      <!-- === TAILWIND CONFIG FILE === -->
+      <script>
+         tailwind.config = {
+             theme: {
+                 extend: {
+                     colors: {
+                         body: '#fffff',
+                         btncolor: '',
+                     },
+                     fontFamily: {
+                         mont: ['Montserrat', 'sans-serif']
+                     }
+                 }
+             }
+         }
+      </script>
+      <title>Photography</title>
+   </head>
+   <body class="bg-[#090925]">
+      <!-- ==== NAVBAR SECTION ==== -->
+      <header class=" relative border-b border-b-gray-500 px-4 py-2">
+         <div class="section sm:flex sm:w-[80%] sm:justify-between sm:mx-auto">
             <div class="flex justify-between sm:w-sm">
-                <img class="w-40" src="/HTML/accests/img/softcode.png" alt="logo">
-                <button id="mobile_icon" class="text-white sm:hidden"><i
-                        class="fa-solid fa-bars-staggered"></i></button>
+               <img class="w-40" src="/HTML/accests/img/softcode.png" alt="logo">
+               <button id="mobile_icon" class="text-white sm:hidden"><i
+                  class="fa-solid fa-bars-staggered"></i></button>
             </div>
             <nav id="mobile_menu"
-                class="absolute text-white flex flex-col bg-[#302C4A] w-full sm:w-3/4 top-12 right-0 text-center hidden sm:block sm:bg-transparent sm:relative sm:top-0 sm:flex sm:flex-row sm:justify-between sm:rounded-full">
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">Home</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">Service</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">Porfolio</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">My Skills</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">Testimonials</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">Blog</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
-                    href="#">Contact</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border sm:border-[#93F2FF] sm:rounded-full sm:px-4 sm:hover:bg-[#93F2FF] text-lg sm:hover:text-[#090925] hidden sm:inline sm:hover:transition-colors"
-                    href="#">Let's Talk</a>
-                <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:bg-[#93F2FF] sm:hover:bg-[#93F2FF] text-lg sm:px-4 sm:rounded-full sm:text-[#090925] hidden sm:inline"
-                    href="#">Buy Now</a>
+               class="absolute text-white flex flex-col bg-[#302C4A] w-full sm:w-3/4 top-12 right-0 text-center hidden sm:block sm:bg-transparent sm:relative sm:top-0 sm:flex sm:flex-row sm:justify-between sm:rounded-full">
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#">Home</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#service">Service</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#portfolio">Porfolio</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#skills">My Skills</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#testimonials">Testimonials</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#blog">Blog</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:hover:bg-transparent text-lg"
+                  href="#contact">Contact</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border sm:border-[#93F2FF] sm:rounded-full sm:px-4 sm:hover:bg-[#93F2FF] text-lg sm:hover:text-[#090925] hidden sm:inline sm:hover:transition-colors"
+                  href="#">Let's Talk</a>
+               <a class="py-2 hover:bg-[#090925] border-b-[#090925] border-b sm:border-none sm:bg-[#93F2FF] sm:hover:bg-[#93F2FF] text-lg sm:px-4 sm:rounded-full sm:text-[#090925] hidden sm:inline"
+                  href="#">Buy Now</a>
             </nav>
-        </div>
-    </header>
-
-    <!-- === HERO SECTION === -->
-    <section
-        class="w-full sm:w-[80%] sm:h-[60vh] sm:flex sm:items-center sm:justify-between px-4 sm:mx-auto mt-10 sm:mt-8">
-        <div class="sm:w-[30%] sm:h-[50vh] bg-white hidden sm:block sm:flex sm:justify-end sm:shadow-2xl">
+         </div>
+      </header>
+      <!-- === HERO SECTION === -->
+      <section
+         class="w-full sm:w-[80%] sm:h-[60vh] sm:flex sm:items-center sm:justify-between px-4 sm:mx-auto mt-10 sm:mt-8">
+         <div class="sm:w-[30%] sm:h-[50vh] bg-white hidden sm:block sm:flex sm:justify-end sm:shadow-2xl">
             <img class="sm:w-auto" src="/HTML/accests/img/woman-photographer.jpg" alt="">
-        </div>
-        <div class="text-center sm:w-full sm:relative">
+         </div>
+         <div class="text-center sm:w-full sm:relative">
             <h1 class="text-white font-bold text-4xl leading-[3.5rem] sm:text-8xl sm:leading-[10rem]">I'm William Olivia
-                <br> A <span class="text-[#93F2FF]">Photographer .</span></h1>
+               <br> A <span class="text-[#93F2FF]">Photographer .</span>
+            </h1>
             <div class="sm:flex sm:itemx-center sm:justify-center items-center mt-8 sm:gap-16">
-                <div class="flex items-center mt-2 text-center justify-center sm:flex-col">
-                    <h3 class="text-white font-semibold text-lg mr-2">Follow Me:</h3>
-                    <!-- === SOCIAL ICONS === -->
-                    <div class="flex items-center gap-4 items-center justify-center sm:mt-4">
-                        <p
-                            class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                            <i class="fa-brands fa-facebook-f"></i></p>
-                        <p
-                            class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                            <i class="fa-brands fa-linkedin-in"></i></p>
-                        <p
-                            class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                            <i class="fa-brands fa-twitter"></i></p>
-                        <p
-                            class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                            <i class="fa-brands fa-instagram"></i></p>
-                    </div>
-                </div>
-                <div class="flex items-center mt-2 text-center justify-center sm:flex-col">
-                    <h3 class="text-white font-semibold text-lg mr-4">My Skills:</h3>
-                    <!-- ==== SKILLS ICON ==== -->
-                    <div class="flex items-center gap-4 items-center justify-center sm:mt-4">
-                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
-                            src="/HTML/accests/img/camera_one.png" alt="camera-img">
-                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
-                            src="/HTML/accests/img/camera_two.png" alt="camera-img">
-                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
-                            src="/HTML/accests/img/camera_three.png" alt="camera-img">
-                        <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
-                            src="/HTML/accests/img/camera_four.png" alt="camera-img">
-                    </div>
-                </div>
+               <div class="flex items-center mt-2 text-center justify-center sm:flex-col">
+                  <h3 class="text-white font-semibold text-lg mr-2">Follow Me:</h3>
+                  <!-- === SOCIAL ICONS === -->
+                  <div class="flex items-center gap-4 items-center justify-center sm:mt-4">
+                     <p
+                        class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                        <i class="fa-brands fa-facebook-f"></i>
+                     </p>
+                     <p
+                        class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                     </p>
+                     <p
+                        class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                        <i class="fa-brands fa-twitter"></i>
+                     </p>
+                     <p
+                        class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                        <i class="fa-brands fa-instagram"></i>
+                     </p>
+                  </div>
+               </div>
+               <div class="flex items-center mt-2 text-center justify-center sm:flex-col">
+                  <h3 class="text-white font-semibold text-lg mr-4">My Skills:</h3>
+                  <!-- ==== SKILLS ICON ==== -->
+                  <div class="flex items-center gap-4 items-center justify-center sm:mt-4">
+                     <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
+                        src="/HTML/accests/img/camera_one.png" alt="camera-img">
+                     <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
+                        src="/HTML/accests/img/camera_two.png" alt="camera-img">
+                     <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
+                        src="/HTML/accests/img/camera_three.png" alt="camera-img">
+                     <img class="text-sm h-[35px] w-[35px] p-1 bg-[#93F2FF1A] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]"
+                        src="/HTML/accests/img/camera_four.png" alt="camera-img">
+                  </div>
+               </div>
             </div>
             <div class="absolute sm:absolute sm:-top-20 top-10">
-                <h1 class="sm:text-[#FFFFFF1A] text-[#FFFFFF1A] text-6xl sm:text-9xl">HI</h1>
+               <h1 class="sm:text-[#FFFFFF1A] text-[#FFFFFF1A] text-6xl sm:text-9xl">HI</h1>
             </div>
-        </div>
-    </section>
-    <!-- === HERO SECTION IMAGE CONTAINER === -->
-    <section class="sm:relative sm:w-[100%] sm:mb-20 sm:mx-auto">
-        <div
+         </div>
+      </section>
+      <!-- === HERO SECTION IMAGE CONTAINER === -->
+      <section class="sm:relative sm:w-[100%] sm:mb-20 sm:mx-auto">
+         <div
             class="flex w-full h-[30vh] overflow-x-auto px-4 sm:px-0 mt-4 gap-4 sm:overflow-x-hidden sm:w-[100%] sm:grid sm:grid-cols-4">
-            <img class="border border-[10px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
-                src="/HTML/accests/img/image-one.jpg" alt="nature-image">
-            <img class="border border-[10px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
-                src="/HTML/accests/img/image-two.jpg" alt="nature-image">
-            <img class="border border-[10px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
-                src="/HTML/accests/img/image-three.jpg" alt="nature-image">
-            <img class="border border-[10px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
-                src="/HTML/accests/img/image-four.jpg" alt="nature-image">
-        </div>
-        <div class="sm:absolute w-1/5 sm:w-full sm:px-4 sm:top-32 flex mx-auto mt-2 items-center justify-between">
+            <img class="border border-[3px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
+               src="/HTML/accests/img/image-one.jpg" alt="nature-image">
+            <img class="border border-[3px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
+               src="/HTML/accests/img/image-two.jpg" alt="nature-image">
+            <img class="border border-[3px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
+               src="/HTML/accests/img/image-three.jpg" alt="nature-image">
+            <img class="border border-[3px] rounded border-[#93F2FF] w-auto sm:w-[100%] sm:h-[30vh]"
+               src="/HTML/accests/img/image-four.jpg" alt="nature-image">
+         </div>
+         <div class="sm:absolute w-1/5 sm:w-full sm:px-4 sm:top-32 flex mx-auto mt-2 items-center justify-between">
             <div class="text-[#93F2FF]"><i class="fa-solid fa-angles-left"></i></div>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-angles-right"></i></div>
-        </div>
-    </section>
-    <!-- === SERVICES SECTION === -->
-    <section class="w-60 sm:w-96 flex flex-col mx-auto mt-4">
-        <!-- === specializations section === -->
-        <div class="spacialization w-full">
+         </div>
+      </section>
+      <!-- === SERVICES SECTION === -->
+      <section id="service" class="w-60 sm:w-96 flex flex-col mx-auto mt-4">
+         <!-- === specializations section === -->
+         <div class="spacialization w-full">
             <div class="flex justify-between">
-                <div class="w-2 h-2 border-t-2 border-s-2 border-gray-400"></div>
-                <div class="w-2 h-2 border-r-2 border-t-2 border-gray-400"></div>
+               <div class="w-2 h-2 border-t-2 border-s-2 border-gray-400"></div>
+               <div class="w-2 h-2 border-r-2 border-t-2 border-gray-400"></div>
             </div>
             <h1 class="text-white font-bold text-lg flex items-center justify-center">My Specialization Services</h1>
             <div class="flex justify-between">
-                <div class="w-2 h-2 border-s-2 border-b-2 border-gray-400"></div>
-                <div class="w-2 h-2 border-r-2 border-b-2 border-gray-400"></div>
+               <div class="w-2 h-2 border-s-2 border-b-2 border-gray-400"></div>
+               <div class="w-2 h-2 border-r-2 border-b-2 border-gray-400"></div>
             </div>
-        </div>
-        <div class="flex items-center justify-center gap-4 mt-2">
+         </div>
+         <div class="flex items-center justify-center gap-4 mt-2">
             <img src="/HTML/accests/img/camera_three.png" alt="">
             <h1 class="text-3xl font-bold text-white">What I Do</h1>
             <img src="/HTML/accests/img/camera_three.png" alt="">
-        </div>
-    </section>
-    <div
-        class="w-full px-4 text-white text-justify mt-2 text-sm mb-4 sm:w-[40%] sm:mx-auto sm:text-2xl sm:text-center leading-[2]">
-        Develop comprehensive content strategies tailored to your unique goals and target audience, ensuring that every
-        piece of content.</div>
-    <!-- === SPACIALIZATIONS CARD SECTION === -->
-    <section class="w-full px-4 sm:px-0 grid grid-cols-1 gap-4 sm:w-[80%] sm:mx-auto sm:grid sm:grid-cols-3">
-        <!-- === CARD ONE === -->
-        <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
+         </div>
+      </section>
+      <div
+         class="w-full px-4 text-white text-justify mt-2 text-sm mb-4 sm:w-[40%] sm:mx-auto sm:text-2xl sm:text-center leading-[2]">
+         Develop comprehensive content strategies tailored to your unique goals and target audience, ensuring that every
+         piece of content.
+      </div>
+      <!-- === SPACIALIZATIONS CARD SECTION === -->
+      <section class="w-full px-4 sm:px-0 grid grid-cols-1 gap-4 sm:w-[80%] sm:mx-auto sm:grid sm:grid-cols-3">
+         <!-- === CARD ONE === -->
+         <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
             <div class="text-[#93F2FF] text-xl sm:text-4xl"><i class="fa-solid fa-camera"></i></div>
             <h3 class="text-white text-sm mt-2 sm:text-2xl sm:font-bold">General Consulatation</h3>
             <p class="text-white text-sm mt-2 sm:text-lg sm:min-h-[80px]">A comprehensive assessment of health,
-                discussing symptoms and concerns to guide.</p>
+               discussing symptoms and concerns to guide.
+            </p>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-        <!-- === CARD TWO === -->
-        <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
+         </div>
+         <!-- === CARD TWO === -->
+         <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
             <div class="text-[#93F2FF] text-xl sm:text-4xl"><i class="fa-solid fa-hand-holding-droplet"></i></div>
             <h3 class="text-white text-sm mt-2 sm:text-2xl sm:font-bold">Mobile App Design</h3>
             <p class="text-white text-sm mt-2 sm:text-lg sm:min-h-[80px]">React encourages a declarative programming
-                style, where developers describe the.</p>
+               style, where developers describe the.
+            </p>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-        <!-- === CARD THREE === -->
-        <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
+         </div>
+         <!-- === CARD THREE === -->
+         <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
             <div class="text-[#93F2FF] text-xl sm:text-4xl"><i class="fa-regular fa-images"></i></div>
             <h3 class="text-white text-sm mt-2 sm:text-2xl sm:font-bold">Accessibility Design</h3>
             <p class="text-white text-sm mt-2 sm:text-lg sm:min-h-[80px]">It builds on top of standard HTML, CSS, and
-                JavaScript and provides a declarative, component-based.</p>
+               JavaScript and provides a declarative, component-based.
+            </p>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-        <!-- === CARD FOUR === -->
-        <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
+         </div>
+         <!-- === CARD FOUR === -->
+         <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
             <div class="text-[#93F2FF] text-xl sm:text-4xl"><i class="fa-solid fa-cubes"></i></div>
             <h3 class="text-white text-sm mt-2 sm:text-2xl sm:font-bold">Website Design</h3>
             <p class="text-white text-sm mt-2 sm:text-lg sm:min-h-[80px]">Our online logo maker lets you generate
-                designs perfectly suited to your business from a.</p>
+               designs perfectly suited to your business from a.
+            </p>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-        <!-- === CARD FIVE === -->
-        <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
+         </div>
+         <!-- === CARD FIVE === -->
+         <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
             <div class="text-[#93F2FF] text-xl sm:text-4xl"><i class="fa-brands fa-react"></i></div>
             <h3 class="text-white text-sm mt-2 sm:text-2xl sm:font-bold">User Experience Audit</h3>
             <p class="text-white text-sm mt-2 sm:text-lg sm:min-h-[80px]">Figma is the leading collaborative design tool
-                for building meaningful products. Seamlessly.</p>
+               for building meaningful products. Seamlessly.
+            </p>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-        <!-- === CARD SIX === -->
-        <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
+         </div>
+         <!-- === CARD SIX === -->
+         <div class="hover-effects border border-gray-600 rounded p-4 hover:border-[#93F2FF]">
             <div class="text-[#93F2FF] text-xl sm:text-4xl"><i class="fa-solid fa-lightbulb"></i></div>
             <h3 class="text-white text-sm mt-2 sm:text-2xl sm:font-bold">Interactive Prototypes</h3>
             <p class="text-white text-sm mt-2 sm:text-lg sm:min-h-[80px]">Try it free, no obligation! Millions of
-                customers love our logo maker. Premium logo designs created.</p>
+               customers love our logo maker. Premium logo designs created.
+            </p>
             <div class="text-[#93F2FF]"><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-    </section>
-    <!-- === MY PORTFOLIO === -->
-    <section class="mt-8 px-4 sm:px-0">
-        <section class="w-60 sm:w-[80%] flex flex-col mx-auto mt-4 sm:place-items-start">
+         </div>
+      </section>
+      <!-- === MY PORTFOLIO === -->
+      <section id="portfolio" class="mt-8 px-4 sm:px-0">
+         <section class="w-60 sm:w-[80%] flex flex-col mx-auto mt-4 sm:place-items-start">
             <!-- === specializations section === -->
             <div>
-                <div class="spacialization w-40 mx-auto sm:w-48">
-                    <div class="flex justify-between">
-                        <div class="w-2 h-2 border-t-2 border-s-2 border-gray-400"></div>
-                        <div class="w-2 h-2 border-r-2 border-t-2 border-gray-400"></div>
-                    </div>
-                    <h1 class="text-[#93F2FF] font-bold text-sm flex items-center justify-center">My Awesome Work</h1>
-                    <div class="flex justify-between">
-                        <div class="w-2 h-2 border-s-2 border-b-2 border-gray-400"></div>
-                        <div class="w-2 h-2 border-r-2 border-b-2 border-gray-400"></div>
-                    </div>
-                </div>
+               <div class="spacialization w-40 mx-auto sm:w-48">
+                  <div class="flex justify-between">
+                     <div class="w-2 h-2 border-t-2 border-s-2 border-gray-400"></div>
+                     <div class="w-2 h-2 border-r-2 border-t-2 border-gray-400"></div>
+                  </div>
+                  <h1 class="text-[#93F2FF] font-bold text-sm flex items-center justify-center">My Awesome Work</h1>
+                  <div class="flex justify-between">
+                     <div class="w-2 h-2 border-s-2 border-b-2 border-gray-400"></div>
+                     <div class="w-2 h-2 border-r-2 border-b-2 border-gray-400"></div>
+                  </div>
+               </div>
             </div>
-        </section>
-        <div class="sm:w-[80%] sm:mx-auto">
-            <h1
-                class="flex w-full mx-auto sm:items-start sm:justify-start items-center justify-center text-white text-3xl font-bold mt-2">
-                My Portfolio</h1>
+         </section>
+         <div class="sm:w-[80%] sm:mx-auto">
+            <h1 class="flex w-full mx-auto sm:items-start sm:justify-start items-center justify-center text-white text-3xl font-bold mt-2">
+               My Portfolio
+            </h1>
             <p
-                class="w-full sm:w-[50%] text-white text-center sm:text-start mt-2 text-sm mb-4 sm:text-2xl sm:text-center sm:place-items-start leading-[2]">
-                With a strong foundation in frontend development and a keen eye for design, I specialize in creating
-                interactive and responsive web.</p>
-        </div>
-        <section class="sm:w-[80%] sm:mx-auto sm:flex mt-8 sm:items-end justify-center gap-4">
+               class="w-full sm:w-[50%] text-white text-center sm:text-start mt-2 text-sm mb-4 sm:text-2xl sm:text-center sm:place-items-start leading-[2]">
+               With a strong foundation in frontend development and a keen eye for design, I specialize in creating
+               interactive and responsive web.
+            </p>
+         </div>
+         <section class="sm:w-[80%] sm:mx-auto sm:flex mt-8 sm:items-end justify-center gap-4">
             <section class="flex gap-2 sm:gap-4 sm:flex-col sm:w-full">
-                <div class="w-2/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-64 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec1-img-one.jpg" alt=""></div>
-                <div class="w-3/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec1-img-two.jpg" alt=""></div>
+               <div class="w-2/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-64 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec1-img-one.jpg" alt=""></div>
+               <div class="w-3/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec1-img-two.jpg" alt=""></div>
             </section>
             <section class="flex gap-2 sm:gap-4 mt-2 sm:flex-col sm:w-full">
-                <div class="w-3/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec2-img-one.jpg" alt=""></div>
-                <div class="w-3/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec2-img-two.jpg" alt=""></div>
-                <div class="w-2/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-64 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec2-img-three.jpg" alt=""></div>
+               <div class="w-3/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec2-img-one.jpg" alt=""></div>
+               <div class="w-3/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec2-img-two.jpg" alt=""></div>
+               <div class="w-2/5 sm:w-full"><img class="w-full sm:w-full h-32 sm:h-64 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec2-img-three.jpg" alt=""></div>
             </section>
             <section class="grid grid-cols-3 gap-2 sm:gap-4 mt-2 sm:grid sm:grid-cols-1 sm:w-full">
-                <div><img class="sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec3-img-one.jpg" alt=""></div>
-                <div><img class="sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec3-img-two.jpg" alt=""></div>
-                <div><img class="sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
-                        src="/HTML/accests/img/sec3-img-three.jpg" alt=""></div>
+               <div><img class="sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec3-img-one.jpg" alt=""></div>
+               <div><img class="sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec3-img-two.jpg" alt=""></div>
+               <div><img class="sm:w-full h-32 sm:h-80 border border-[#93F2FF] rounded"
+                  src="/HTML/accests/img/sec3-img-three.jpg" alt=""></div>
             </section>
-        </section>
-    </section>
-    <!-- === ABOUT ME === -->
-    <section
-        class="flex flex-col w-full px-4 sm:px-0 mt-6 mx-auto items-center justify-center sm:justify-between sm:w-[80%] sm:gap-8 sm:grid sm:grid-cols-2">
-        <p class="text-[#93F2FF] text-center font-semibold text-lg mb-2 sm:hidden">About Me</p>
-        <div class="w-full"><img
-                class="w-32 sm:w-full h-32 sm:w-[100%] sm:h-[80vh] rounded-full sm:rounded border border-2 border-[#93F2FF] mx-auto"
-                src="/HTML/accests/img/woman-photographer.jpg" alt=""></div>
-        <div class="text-white">
+         </section>
+      </section>
+      <!-- === ABOUT ME === -->
+      <section id="skills"
+         class="flex flex-col w-full px-4 sm:px-0 mt-6 mx-auto items-center justify-center sm:justify-between sm:w-[80%] sm:gap-8 sm:grid sm:grid-cols-2">
+         <p class="text-[#93F2FF] text-center font-semibold text-lg mb-2 sm:hidden">About Me</p>
+         <div class="w-full"><img
+            class="w-32 sm:w-full h-32 sm:w-[100%] sm:h-[80vh] rounded-full sm:rounded border border-2 border-[#93F2FF] mx-auto"
+            src="/HTML/accests/img/woman-photographer.jpg" alt=""></div>
+         <div class="text-white">
             <h1 class="text-[#93F2FF] text-xl font-semibold hidden sm:inline">About Me</h1>
             <h1 class="text-white text-4xl font-bold sm:mt-6">About Me</h1>
             <p class="mt-2 text-sm leading-[2] text-justify sm:text-lg sm:mt-4">They are responsible for all aspects of
-                their business, from finding clients and managing projects to handling administrative tasks. </p>
+               their business, from finding clients and managing projects to handling administrative tasks. 
+            </p>
             <p class="mt-2 text-sm leading-[2] text-justify sm:text-lg sm:mt-4">I believe that photography is not just
-                about pressing the shutter button; it's about capturing the heartbeat of a moment, the unspoken words,
-                and the unguarded emotions</p>
+               about pressing the shutter button; it's about capturing the heartbeat of a moment, the unspoken words,
+               and the unguarded emotions
+            </p>
             <div
-                class="flex w-full mx-auto flex items-center sm:items-start justify-center sm:justify-start gap-6 mt-4 sm:mt-8">
-                <div
-                    class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
-                    <img src="/HTML/accests/img/xd.svg" alt=""></div>
-                <div
-                    class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
-                    <img src="/HTML/accests/img/ai.svg" alt=""></div>
-                <div
-                    class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
-                    <img src="/HTML/accests/img/ps.svg" alt=""></div>
-                <div
-                    class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
-                    <img src="/HTML/accests/img/cnava.svg" alt=""></div>
+               class="flex w-full mx-auto flex items-center sm:items-start justify-center sm:justify-start gap-6 mt-4 sm:mt-8">
+               <div
+                  class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
+                  <img src="/HTML/accests/img/xd.svg" alt="">
+               </div>
+               <div
+                  class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
+                  <img src="/HTML/accests/img/ai.svg" alt="">
+               </div>
+               <div
+                  class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
+                  <img src="/HTML/accests/img/ps.svg" alt="">
+               </div>
+               <div
+                  class="w-1/6 h-12 sm:w-12 sm:h-12 bg-[#93F2FF05] border border-[#FFFFFF69] rounded-lg flex items-center justify-center">
+                  <img src="/HTML/accests/img/cnava.svg" alt="">
+               </div>
             </div>
             <div class="text-center mt-4 sm:w-full sm:text-start sm:mt-8">
-                <a class="text-[#070721] bg-[#93F2FF] px-8 py-2 rounded-full" href="#">Dounload CV <i
-                        class="fa-solid fa-download"></i></a>
+               <a class="text-[#070721] bg-[#93F2FF] px-8 py-2 rounded-full" href="#">Dounload CV <i
+                  class="fa-solid fa-download"></i></a>
             </div>
-        </div>
-    </section>
-    <!-- === MY PRICING SECTION === -->
-    <section class="mt-8 w-full flex flex-col items-center justify-center px-3">
-        <section>
+         </div>
+      </section>
+      <!-- === MY PRICING SECTION === -->
+      <section id="testimonials" class="mt-8 w-full flex flex-col items-center justify-center px-3">
+         <section>
             <div class="flex items-center justify-between">
-                <div class="w-3 h-3 border-t-2 border-l-2 border-gray-400"></div>
-                <div class="w-3 h-3 border-t-2 border-r-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-t-2 border-l-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-t-2 border-r-2 border-gray-400"></div>
             </div>
             <h1 class="font-bold text-sm px-4 text-[#93F2FF]">My Pricing</h1>
             <div class="flex items-center justify-between">
-                <div class="w-3 h-3 border-l-2 border-b-2 border-gray-400"></div>
-                <div class="w-3 h-3 border-b-2 border-r-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-l-2 border-b-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-b-2 border-r-2 border-gray-400"></div>
             </div>
-        </section>
-        <h1 class="mt-4 text-4xl font-bold text-white">My Pricing</h1>
-        <p class="text-white text-sm text-center mt-4 sm:text-2xl sm:w-[40%] leading-[2]">As a frontend specialist, I
+         </section>
+         <h1 class="mt-4 text-4xl font-bold text-white">My Pricing</h1>
+         <p class="text-white text-sm text-center mt-4 sm:text-2xl sm:w-[40%] leading-[2]">As a frontend specialist, I
             excel in building captivating user interfaces that not only look great but also provide seamless navigation.
-        </p>
-        <!-- === CARD SECTION === -->
-        <div class="sm:w-[80%] sm:grid sm:grid-cols-3 sm:justify-between gap-4">
+         </p>
+         <!-- === CARD SECTION === -->
+         <div class="sm:w-[80%] sm:grid sm:grid-cols-3 sm:justify-between gap-4">
             <!-- === CARD ONE === -->
             <div class="pricing-hvr-effects border rounded p-4 text-white mt-4">
-                <p class="text-lg font-bold">Basic</p>
-                <p class="text-sm mt-2">Offering competitive pricing for unparalleled service.</p>
-                <h1 class="text-2xl font-bold text-[#93F2FF] mt-2 mb-4 text-[#93F2FF]">$15.00</h1>
-                <div
-                    class="w-48 sm:w-full hover:bg-[#93F2FF] px-8 py-2 border border-[#FFFFFF1A] text-[#93F2FF] hover:text-[#070721] font-semibold rounded-lg sm:text-center">
-                    <a class="" href="#">ORDER NOW <I class="fa-solid fas fa-arrow-right"></I></a></div>
-                <div class="flex items-center text-[#93F2FF] mt-4"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">UI/UX Design Consultation</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Website Design and Redesign</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Wireframing and Storyboarding</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Landing Page Design</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">App Icon and Logo Design</p>
-                </div>
+               <p class="text-lg font-bold">Basic</p>
+               <p class="text-sm mt-2">Offering competitive pricing for unparalleled service.</p>
+               <h1 class="text-2xl font-bold text-[#93F2FF] mt-2 mb-4 text-[#93F2FF]">$15.00</h1>
+               <div
+                  class="w-48 sm:w-full hover:bg-[#93F2FF] px-8 py-2 border border-[#FFFFFF1A] text-[#93F2FF] hover:text-[#070721] font-semibold rounded-lg sm:text-center">
+                  <a class="" href="#">ORDER NOW <I class="fa-solid fas fa-arrow-right"></I></a>
+               </div>
+               <div class="flex items-center text-[#93F2FF] mt-4">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">UI/UX Design Consultation</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Website Design and Redesign</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Wireframing and Storyboarding</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Landing Page Design</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">App Icon and Logo Design</p>
+               </div>
             </div>
             <!-- === CARD TWO === -->
             <div class="pricing-hvr-effects border rounded p-4 text-white mt-4">
-                <p class="text-lg font-bold">Standard</p>
-                <p class="text-sm mt-2">Offering competitive pricing for unparalleled service.</p>
-                <h1 class="text-2xl font-bold text-[#93F2FF] mt-2 mb-4 text-[#93F2FF]">$20.00</h1>
-                <div
-                    class="w-48 sm:w-full hover:bg-[#93F2FF] px-8 py-2 border border-[#FFFFFF1A] text-[#93F2FF] hover:text-[#070721] font-semibold rounded-lg sm:text-center">
-                    <a class="" href="#">ORDER NOW <I class="fa-solid fas fa-arrow-right"></I></a></div>
-                <div class="flex items-center text-[#93F2FF] mt-4"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">UI/UX Design Consultation</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Website Design and Redesign</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Wireframing and Storyboarding</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Landing Page Design</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">App Icon and Logo Design</p>
-                </div>
+               <p class="text-lg font-bold">Standard</p>
+               <p class="text-sm mt-2">Offering competitive pricing for unparalleled service.</p>
+               <h1 class="text-2xl font-bold text-[#93F2FF] mt-2 mb-4 text-[#93F2FF]">$20.00</h1>
+               <div
+                  class="w-48 sm:w-full hover:bg-[#93F2FF] px-8 py-2 border border-[#FFFFFF1A] text-[#93F2FF] hover:text-[#070721] font-semibold rounded-lg sm:text-center">
+                  <a class="" href="#">ORDER NOW <I class="fa-solid fas fa-arrow-right"></I></a>
+               </div>
+               <div class="flex items-center text-[#93F2FF] mt-4">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">UI/UX Design Consultation</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Website Design and Redesign</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Wireframing and Storyboarding</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Landing Page Design</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">App Icon and Logo Design</p>
+               </div>
             </div>
             <!-- === CARD THREE === -->
             <div class="pricing-hvr-effects border rounded p-4 text-white mt-4">
-                <p class="text-lg font-bold">Premium</p>
-                <p class="text-sm mt-2">Offering competitive pricing for unparalleled service.</p>
-                <h1 class="text-2xl font-bold text-[#93F2FF] mt-2 mb-4 text-[#93F2FF]">$35.00</h1>
-                <div
-                    class="w-48 sm:w-full hover:bg-[#93F2FF] px-8 py-2 border border-[#FFFFFF1A] text-[#93F2FF] hover:text-[#070721] font-semibold rounded-lg sm:text-center">
-                    <a class="" href="#">ORDER NOW <I class="fa-solid fas fa-arrow-right"></I></a></div>
-                <div class="flex items-center text-[#93F2FF] mt-4"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">UI/UX Design Consultation</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Website Design and Redesign</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Wireframing and Storyboarding</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">Landing Page Design</p>
-                </div>
-                <div class="flex itemx-center text-[#93F2FF] mt-2"><i class="fa-solid fa-check"></i>
-                    <p class="px-2 text-sm text-white">App Icon and Logo Design</p>
-                </div>
+               <p class="text-lg font-bold">Premium</p>
+               <p class="text-sm mt-2">Offering competitive pricing for unparalleled service.</p>
+               <h1 class="text-2xl font-bold text-[#93F2FF] mt-2 mb-4 text-[#93F2FF]">$35.00</h1>
+               <div
+                  class="w-48 sm:w-full hover:bg-[#93F2FF] px-8 py-2 border border-[#FFFFFF1A] text-[#93F2FF] hover:text-[#070721] font-semibold rounded-lg sm:text-center">
+                  <a class="" href="#">ORDER NOW <I class="fa-solid fas fa-arrow-right"></I></a>
+               </div>
+               <div class="flex items-center text-[#93F2FF] mt-4">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">UI/UX Design Consultation</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Website Design and Redesign</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Wireframing and Storyboarding</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">Landing Page Design</p>
+               </div>
+               <div class="flex itemx-center text-[#93F2FF] mt-2">
+                  <i class="fa-solid fa-check"></i>
+                  <p class="px-2 text-sm text-white">App Icon and Logo Design</p>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- === AWESOME CLIENTS === -->
-    <section class="mt-8 w-full flex flex-col items-center justify-center px-3">
-        <section>
+         </div>
+      </section>
+      <!-- === AWESOME CLIENTS === -->
+      <section class="mt-8 w-full flex flex-col items-center justify-center px-3">
+         <section>
             <div class="flex items-center justify-between">
-                <div class="w-3 h-3 border-t-2 border-l-2 border-gray-400"></div>
-                <div class="w-3 h-3 border-t-2 border-r-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-t-2 border-l-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-t-2 border-r-2 border-gray-400"></div>
             </div>
             <h1 class="font-bold text-sm px-4 text-[#93F2FF]">Clients Feedback</h1>
             <div class="flex items-center justify-between">
-                <div class="w-3 h-3 border-l-2 border-b-2 border-gray-400"></div>
-                <div class="w-3 h-3 border-b-2 border-r-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-l-2 border-b-2 border-gray-400"></div>
+               <div class="w-3 h-3 border-b-2 border-r-2 border-gray-400"></div>
             </div>
-        </section>
-        <h1 class="mt-4 text-4xl font-bold text-white">Awesome Clients</h1>
-        <p class="text-white text-sm text-center mt-4 sm:text-2xl sm:w-[40%] leading-[2]">With a strong foundation in
-            frontend development and a keen eye for design, I specialize in creating interactive and responsive web.</p>
-        <!-- === CARD SECTION === -->
-        <section
-            class="sm:w-[80%] grid grid-cols-1 sm:grid-cols-3 gap-[55px] min-h-64 max-h-64 overflow-y-auto sm:mt-8 pr-2">
+         </section>
+         <h1 class="mt-4 text-4xl font-bold text-white">Awesome Clients</h1>
+         <p class="text-white text-sm text-center mt-4 sm:text-2xl sm:w-[40%] leading-[2]">With a strong foundation in
+            frontend development and a keen eye for design, I specialize in creating interactive and responsive web.
+         </p>
+         <!-- === CARD SECTION === -->
+         <section
+            class="w-full overflow-x-auto sm:w-[80%] flex gap-[5px] sm:mt-8 px-2 sm:overflow-x-auto">
             <!-- === CARD ONE === -->
-            <div class="bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 min-h-48 mb-2">
-                <!-- === RATINGS CONTAINER === -->
-                <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
-                    <p class="font-semibold text-lg text-white">5.0</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text-white leading-[2] text-sm text-center">"Working with [Your Name] on our website's UI/UX
-                    design was a game-changer. Their expertise brought fresh perspectives and innovative solutions that
-                    not only made our platform. "</div>
-                <div class="items-center justify-center">
-                    <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
-                        <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
-                            src="/HTML/accests/img/client_one.jpg" alt="">
-                    </div>
-                    <div class="text-white text-center">
-                        <h5>Mrs. Irin Pervin</h5>
-                        <p class="text-[10px]">UI/UX Designer</p>
-                    </div>
-                </div>
+            <div class="min-w-[100%] max-w-[100%] sm:min-w-[33%] sm:max-w-[33%] awesome-effects[#0c0c26] border border-[#FFFFFF1A] rounded p-4 sm:max-h-[260px] sm:min-h-[260px] mb-2">
+               <!-- === RATINGS CONTAINER === -->
+               <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
+                  <p class="font-semibold text-lg text-white">5.0</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="text-white leading-[2] text-sm text-center">"Working with [Your Name] on our website's UI/UX
+                  design was a game-changer. Their expertise brought fresh perspectives and innovative solutions that
+                  not only made our platform. "
+               </div>
+               <div class="items-center justify-center">
+                  <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
+                     <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
+                        src="/HTML/accests/img/client_one.jpg" alt="">
+                  </div>
+                  <div class="text-white text-center">
+                     <h5>Mrs. Irin Pervin</h5>
+                     <p class="text-[10px]">UI/UX Designer</p>
+                  </div>
+               </div>
             </div>
             <!-- === CARD TWO === -->
-            <div class="bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 min-h-48 mb-2">
-                <!-- === RATINGS CONTAINER === -->
-                <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
-                    <p class="font-semibold text-lg text-white">5.0</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text-white leading-[2] text-sm text-center">I hope this message finds you well. I wanted to
-                    take a moment to provide some feedback on the recent project we collaborated on. Overall, I am
-                    extremely pleased with the outcome. </div>
-                <div class="items-center justify-center">
-                    <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
-                        <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
-                            src="/HTML/accests/img/client_two.jpg" alt="">
-                    </div>
-                    <div class="text-white text-center">
-                        <h5>Jogn Due Sr</h5>
-                        <p class="text-[10px]">App Developer</p>
-                    </div>
-                </div>
+            <div class="min-w-[100%] max-w-[100%] sm:min-w-[33%] sm:max-w-[33%] bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 sm:max-h-[260px] sm:min-h-[260px] mb-2">
+               <!-- === RATINGS CONTAINER === -->
+               <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
+                  <p class="font-semibold text-lg text-white">5.0</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="text-white leading-[2] text-sm text-center">I hope this message finds you well. I wanted to
+                  take a moment to provide some feedback on the recent project we collaborated on. Overall, I am
+                  extremely pleased with the outcome. 
+               </div>
+               <div class="items-center justify-center">
+                  <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
+                     <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
+                        src="/HTML/accests/img/client_two.jpg" alt="">
+                  </div>
+                  <div class="text-white text-center">
+                     <h5>Jogn Due Sr</h5>
+                     <p class="text-[10px]">App Developer</p>
+                  </div>
+               </div>
             </div>
             <!-- === CARD THREE === -->
-            <div class="bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 min-h-48 mb-2">
-                <!-- === RATINGS CONTAINER === -->
-                <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
-                    <p class="font-semibold text-lg text-white">5.0</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text-white leading-[2] text-sm text-center">Your team demonstrated a high level of
-                    professionalism and expertise in their respective roles. From project management to technical
-                    execution, everyone involved exhibited. outcome. </div>
-                <div class="items-center justify-center">
-                    <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
-                        <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
-                            src="/HTML/accests/img/client_three.jpg" alt="">
-                    </div>
-                    <div class="text-white text-center">
-                        <h5>Sr Erina Jahan</h5>
-                        <p class="text-[10px]">Lead Developer</p>
-                    </div>
-                </div>
+            <div class="min-w-[100%] max-w-[100%] sm:min-w-[33%] sm:max-w-[33%] bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 sm:max-h-[260px] sm:min-h-[260px] mb-2">
+               <!-- === RATINGS CONTAINER === -->
+               <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
+                  <p class="font-semibold text-lg text-white">5.0</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="text-white leading-[2] text-sm text-center">Your team demonstrated a high level of
+                  professionalism and expertise in their respective roles. From project management to technical
+                  execution, everyone involved exhibited. outcome. 
+               </div>
+               <div class="items-center justify-center">
+                  <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
+                     <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
+                        src="/HTML/accests/img/client_three.jpg" alt="">
+                  </div>
+                  <div class="text-white text-center">
+                     <h5>Sr Erina Jahan</h5>
+                     <p class="text-[10px]">Lead Developer</p>
+                  </div>
+               </div>
             </div>
             <!-- === CARD ONE === -->
-            <div class="bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 min-h-48 mb-2">
-                <!-- === RATINGS CONTAINER === -->
-                <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
-                    <p class="font-semibold text-lg text-white">5.0</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text-white leading-[2] text-sm text-center">"Working with [Your Name] on our website's UI/UX
-                    design was a game-changer. Their expertise brought fresh perspectives and innovative solutions that
-                    not only made our platform. "</div>
-                <div class="items-center justify-center">
-                    <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
-                        <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
-                            src="/HTML/accests/img/client_one.jpg" alt="">
-                    </div>
-                    <div class="text-white text-center">
-                        <h5>Mrs. Irin Pervin</h5>
-                        <p class="text-[10px]">UI/UX Designer</p>
-                    </div>
-                </div>
+            <div class="min-w-[100%] max-w-[100%] sm:min-w-[33%] sm:max-w-[33%] bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 sm:max-h-[260px] sm:min-h-[260px] mb-2">
+               <!-- === RATINGS CONTAINER === -->
+               <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
+                  <p class="font-semibold text-lg text-white">5.0</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="text-white leading-[2] text-sm text-center">"Working with [Your Name] on our website's UI/UX
+                  design was a game-changer. Their expertise brought fresh perspectives and innovative solutions that
+                  not only made our platform. "
+               </div>
+               <div class="items-center justify-center">
+                  <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
+                     <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
+                        src="/HTML/accests/img/client_one.jpg" alt="">
+                  </div>
+                  <div class="text-white text-center">
+                     <h5>Mrs. Irin Pervin</h5>
+                     <p class="text-[10px]">UI/UX Designer</p>
+                  </div>
+               </div>
             </div>
             <!-- === CARD TWO === -->
-            <div class="bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 min-h-48 mb-2">
-                <!-- === RATINGS CONTAINER === -->
-                <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
-                    <p class="font-semibold text-lg text-white">5.0</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text-white leading-[2] text-sm text-center">I hope this message finds you well. I wanted to
-                    take a moment to provide some feedback on the recent project we collaborated on. Overall, I am
-                    extremely pleased with the outcome. </div>
-                <div class="items-center justify-center">
-                    <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
-                        <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
-                            src="/HTML/accests/img/client_two.jpg" alt="">
-                    </div>
-                    <div class="text-white text-center">
-                        <h5>Jogn Due Sr</h5>
-                        <p class="text-[10px]">App Developer</p>
-                    </div>
-                </div>
+            <div class="min-w-[100%] max-w-[100%] sm:min-w-[33%] sm:max-w-[33%] bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 sm:max-h-[260px] sm:min-h-[260px] mb-2">
+               <!-- === RATINGS CONTAINER === -->
+               <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
+                  <p class="font-semibold text-lg text-white">5.0</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="text-white leading-[2] text-sm text-center">I hope this message finds you well. I wanted to
+                  take a moment to provide some feedback on the recent project we collaborated on. Overall, I am
+                  extremely pleased with the outcome. 
+               </div>
+               <div class="items-center justify-center">
+                  <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
+                     <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
+                        src="/HTML/accests/img/client_two.jpg" alt="">
+                  </div>
+                  <div class="text-white text-center">
+                     <h5>Jogn Due Sr</h5>
+                     <p class="text-[10px]">App Developer</p>
+                  </div>
+               </div>
             </div>
             <!-- === CARD THREE === -->
-            <div class="bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 min-h-48 mb-2">
-                <!-- === RATINGS CONTAINER === -->
-                <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
-                    <p class="font-semibold text-lg text-white">5.0</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <div class="text-white leading-[2] text-sm text-center">Your team demonstrated a high level of
-                    professionalism and expertise in their respective roles. From project management to technical
-                    execution, everyone involved exhibited. outcome. </div>
-                <div class="items-center justify-center">
-                    <div class=" w-8 h-8 rounded-full flex mx-auto items-center justify-center">
-                        <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
-                            src="/HTML/accests/img/client_three.jpg" alt="">
-                    </div>
-                    <div class="text-white text-center">
-                        <h5>Sr Erina Jahan</h5>
-                        <p class="text-[10px]">Lead Developer</p>
-                    </div>
-                </div>
+            <div class="min-w-[100%] max-w-[100%] sm:min-w-[33%] sm:max-w-[33%] bg-[#0c0c26] border border-[#FFFFFF1A] rounded p-4 sm:max-h-[260px] sm:min-h-[260px] mb-2">
+               <!-- === RATINGS CONTAINER === -->
+               <div class="flex text-[#FF9A50] items-center gap-2 justify-center">
+                  <p class="font-semibold text-lg text-white">5.0</p>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+               </div>
+               <div class="text-white leading-[2] text-sm text-center">Your team demonstrated a high level of
+                  professionalism and expertise in their respective roles. From project management to technical
+                  execution, everyone involved exhibited. outcome. 
+               </div>
+               <div class="items-center justify-center">
+                  <div class="w-8 h-8 rounded-full flex mx-auto items-center justify-center">
+                     <img class="w-8 h-8 border border-2 border-[#12122C] rounded-full"
+                        src="/HTML/accests/img/client_three.jpg" alt="">
+                  </div>
+                  <div class="text-white text-center">
+                     <h5>Sr Erina Jahan</h5>
+                     <p class="text-[10px]">Lead Developer</p>
+                  </div>
+               </div>
             </div>
-        </section>
-    </section>
-    <section class="mt-8 mb-8 w-full px-4 mx-auto sm:w-[70%]">
-        <div class="flex items-center justify-between">
+         </section>
+      </section>
+      <section class="mt-8 mb-8 w-full px-4 mx-auto sm:w-[70%]">
+         <div class="flex items-center justify-between">
             <div class="border-t-2 w-8 sm:w-full"></div>
             <p class="text-white text-sm sm:w-full sm:text-center sm:text-lg">Trusted by World’s Awesome Clients</p>
             <div class="border-t-2 w-8 sm:w-full"></div>
-        </div>
-    </section>
-    <section class="w-full px-4 sm:w-[70%] mx-auto ">
-        <div class="bg-[#0E0E26] p-4 rounded">
+         </div>
+      </section>
+      <section class="w-full px-4 sm:w-[70%] mx-auto ">
+         <div class="bg-[#0E0E26] p-4 rounded">
             <div class="awesome-effects border border-[#FFFFFF1A] p-4 rounded sm:flex sm:gap-8 sm:items-center">
-                <div>
-                    <iframe src="https://www.youtube.com/embed/ShFHti2aAmY?si=AVqQeaWmHH7ijvxO&amp;start=1"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="text-white mt-4">
-                    <p class="text-sm leading-[2] sm:text-lg">“Their expertise and commitment to excellence are truly
-                        commendable. We highly Recommend Themes Park to anyone seeking top-notch service and outstanding
-                        results. Thank you for a job well done”</p>
-                    <p class="font-bold text-sm mt-4">Charles E Eusa</p>
-                    <p class="text-[10px]">Tech Lead @ Officer</p>
-                </div>
+               <div>
+                  <iframe src="https://www.youtube.com/embed/ShFHti2aAmY?si=AVqQeaWmHH7ijvxO&amp;start=1"
+                     title="YouTube video player" frameborder="0"
+                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               </div>
+               <div class="text-white mt-4">
+                  <p class="text-sm leading-[2] sm:text-lg">“Their expertise and commitment to excellence are truly
+                     commendable. We highly Recommend Themes Park to anyone seeking top-notch service and outstanding
+                     results. Thank you for a job well done”
+                  </p>
+                  <p class="font-bold text-sm mt-4">Charles E Eusa</p>
+                  <p class="text-[10px]">Tech Lead @ Officer</p>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- === RECENT POST === -->
-    <section class="bg-[#0E0E26]">
-        <section class="w-full px-4 sm:w-[80%] sm:mx-auto mt-8 py-4">
+         </div>
+      </section>
+      <!-- === RECENT POST === -->
+      <section id="blog" class="bg-[#0E0E26]">
+         <section class="w-full px-4 sm:w-[80%] sm:mx-auto mt-8 py-4">
             <div class="w-40 mx-auto">
-                <div class="flex items-center justify-between">
-                    <div class="w-3 h-3 border-t-2 border-l-2 border-[#494967]"></div>
-                    <div class="w-3 h-3 border-t-2 border-r-2 border-[#494967]"></div>
-                </div>
-                <h1 class="font-bold text-sm px-4 text-[#93F2FF] text-center">My Recent Post</h1>
-                <div class="flex items-center justify-between">
-                    <div class="w-3 h-3 border-l-2 border-b-2 border-[#494967]"></div>
-                    <div class="w-3 h-3 border-r-2 border-b-2 border-[#494967]"></div>
-                </div>
+               <div class="flex items-center justify-between">
+                  <div class="w-3 h-3 border-t-2 border-l-2 border-[#494967]"></div>
+                  <div class="w-3 h-3 border-t-2 border-r-2 border-[#494967]"></div>
+               </div>
+               <h1 class="font-bold text-sm px-4 text-[#93F2FF] text-center">My Recent Post</h1>
+               <div class="flex items-center justify-between">
+                  <div class="w-3 h-3 border-l-2 border-b-2 border-[#494967]"></div>
+                  <div class="w-3 h-3 border-r-2 border-b-2 border-[#494967]"></div>
+               </div>
             </div>
             <h1 class="mt-4 text-4xl font-bold text-white text-center">Recent Post</h1>
             <p class="text-white text-sm text-center mt-4 sm:text-2xl sm:w-[60%] sm:mx-auto leading-[2]">With a strong
-                foundation in frontend development and a keen eye for design, I specialize in creating interactive and
-                responsive web.</p>
-        </section>
-        <!-- === CARD SECITON === -->
-        <section
+               foundation in frontend development and a keen eye for design, I specialize in creating interactive and
+               responsive web.
+            </p>
+         </section>
+         <!-- === CARD SECITON === -->
+         <section
             class="w-full h-80 sm:min-h-[800px] flex overflow-x-auto sm:overflow-y-auto sm:flex-col sm:grid sm:grid-cols-2">
             <!-- === CARD ONE === -->
             <div class="relative min-w-[100%] max-w-[100%] px-4 sm:sm:mb-[70px] sm:mt-8">
-                <iframe class="w-full h-64 sm:h-80 rounded"
-                    src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div
-                    class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
-                    <div class="flex items-center justify-between">
-                        <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
-                            href="#">Teach Learn</a>
-                        <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
-                    </div>
-                    <h2 class="font-semibold sm:text-2xl text-white mt-2">Exploring Cutting Edge Techno Web App</h2>
-                    <div class="mt-2">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-one.png" alt="">
-                                <p class="text-sm text-white">Irin Pervin</p>
-                            </div>
-                            <p class="text-sm text-white">March 25, 2024</p>
+               <iframe class="w-full h-64 sm:h-80 rounded"
+                  src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <div
+                  class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
+                  <div class="flex items-center justify-between">
+                     <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
+                        href="#">Teach Learn</a>
+                     <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
+                  </div>
+                  <h2 class="font-semibold sm:text-2xl text-white mt-2">Exploring Cutting Edge Techno Web App</h2>
+                  <div class="mt-2">
+                     <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                           <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-one.png" alt="">
+                           <p class="text-sm text-white">Irin Pervin</p>
                         </div>
-                    </div>
-                </div>
+                        <p class="text-sm text-white">March 25, 2024</p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- === CARD TWO === -->
             <div class="relative min-w-[100%] max-w-[100%] px-4 sm:sm:mb-[70px] sm:mt-8">
-                <iframe class="w-full h-64 sm:h-80 rounded"
-                    src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div
-                    class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
-                    <div class="flex items-center justify-between">
-                        <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
-                            href="#">Teach Learn</a>
-                        <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
-                    </div>
-                    <h2 class="font-semibold sm:text-2xl text-white mt-2">Application Cutting Edge Techno Craft</h2>
-                    <div class="mt-2">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-two.png" alt="">
-                                <p class="text-sm text-white">Irin Pervin</p>
-                            </div>
-                            <p class="text-sm text-white">March 25, 2024</p>
+               <iframe class="w-full h-64 sm:h-80 rounded"
+                  src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <div
+                  class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
+                  <div class="flex items-center justify-between">
+                     <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
+                        href="#">Teach Learn</a>
+                     <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
+                  </div>
+                  <h2 class="font-semibold sm:text-2xl text-white mt-2">Application Cutting Edge Techno Craft</h2>
+                  <div class="mt-2">
+                     <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                           <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-two.png" alt="">
+                           <p class="text-sm text-white">Irin Pervin</p>
                         </div>
-                    </div>
-                </div>
+                        <p class="text-sm text-white">March 25, 2024</p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- === CARD THREE === -->
             <div class="relative min-w-[100%] max-w-[100%] px-4 sm:mb-[70px]">
-                <iframe class="w-full h-64 sm:h-80 rounded"
-                    src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div
-                    class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
-                    <div class="flex items-center justify-between">
-                        <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
-                            href="#">Teach Learn</a>
-                        <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
-                    </div>
-                    <h2 class="font-semibold sm:text-2xl text-white mt-2">Comparing Redux, Context API, and Recoil</h2>
-                    <div class="mt-2">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-three.png" alt="">
-                                <p class="text-sm text-white">Irin Pervin</p>
-                            </div>
-                            <p class="text-sm text-white">March 25, 2024</p>
+               <iframe class="w-full h-64 sm:h-80 rounded"
+                  src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <div
+                  class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
+                  <div class="flex items-center justify-between">
+                     <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
+                        href="#">Teach Learn</a>
+                     <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
+                  </div>
+                  <h2 class="font-semibold sm:text-2xl text-white mt-2">Comparing Redux, Context API, and Recoil</h2>
+                  <div class="mt-2">
+                     <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                           <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-three.png" alt="">
+                           <p class="text-sm text-white">Irin Pervin</p>
                         </div>
-                    </div>
-                </div>
+                        <p class="text-sm text-white">March 25, 2024</p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- === CARD FOUR === -->
             <div class="relative min-w-[100%] max-w-[100%] px-4 sm:mb-[70px]">
-                <iframe class="w-full h-64 sm:h-80 rounded"
-                    src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div
-                    class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
-                    <div class="flex items-center justify-between">
-                        <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
-                            href="#">Teach Learn</a>
-                        <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
-                    </div>
-                    <h2 class="font-semibold sm:text-2xl text-white mt-2">A Comprehensive Guide to Building</h2>
-                    <div class="mt-2">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-four.png" alt="">
-                                <p class="text-sm text-white">Irin Pervin</p>
-                            </div>
-                            <p class="text-sm text-white">March 25, 2024</p>
+               <iframe class="w-full h-64 sm:h-80 rounded"
+                  src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <div
+                  class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
+                  <div class="flex items-center justify-between">
+                     <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
+                        href="#">Teach Learn</a>
+                     <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
+                  </div>
+                  <h2 class="font-semibold sm:text-2xl text-white mt-2">A Comprehensive Guide to Building</h2>
+                  <div class="mt-2">
+                     <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                           <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-four.png" alt="">
+                           <p class="text-sm text-white">Irin Pervin</p>
                         </div>
-                    </div>
-                </div>
+                        <p class="text-sm text-white">March 25, 2024</p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- === CARD THREE === -->
             <div class="relative min-w-[100%] max-w-[100%] px-4 sm:mb-[70px]">
-                <iframe class="w-full h-64 sm:h-80 rounded"
-                    src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div
-                    class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
-                    <div class="flex items-center justify-between">
-                        <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
-                            href="#">Teach Learn</a>
-                        <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
-                    </div>
-                    <h2 class="font-semibold sm:text-2xl text-white mt-2">Comparing Redux, Context API, and Recoil</h2>
-                    <div class="mt-2">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-three.png" alt="">
-                                <p class="text-sm text-white">Irin Pervin</p>
-                            </div>
-                            <p class="text-sm text-white">March 25, 2024</p>
+               <iframe class="w-full h-64 sm:h-80 rounded"
+                  src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <div
+                  class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
+                  <div class="flex items-center justify-between">
+                     <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
+                        href="#">Teach Learn</a>
+                     <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
+                  </div>
+                  <h2 class="font-semibold sm:text-2xl text-white mt-2">Comparing Redux, Context API, and Recoil</h2>
+                  <div class="mt-2">
+                     <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                           <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-three.png" alt="">
+                           <p class="text-sm text-white">Irin Pervin</p>
                         </div>
-                    </div>
-                </div>
+                        <p class="text-sm text-white">March 25, 2024</p>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- === CARD FOUR === -->
             <div class="relative min-w-[100%] max-w-[100%] px-4 sm:mb-[70px]">
-                <iframe class="w-full h-64 sm:h-80 rounded"
-                    src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div
-                    class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
-                    <div class="flex items-center justify-between">
-                        <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
-                            href="#">Teach Learn</a>
-                        <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
-                    </div>
-                    <h2 class="font-semibold sm:text-2xl text-white mt-2">A Comprehensive Guide to Building</h2>
-                    <div class="mt-2">
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center">
-                                <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-four.png" alt="">
-                                <p class="text-sm text-white">Irin Pervin</p>
-                            </div>
-                            <p class="text-sm text-white">March 25, 2024</p>
+               <iframe class="w-full h-64 sm:h-80 rounded"
+                  src="https://www.youtube.com/embed/4lhJllc9jNc?si=6o7L5WU24wv7OkFQ" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <div
+                  class="absolute w-64 sm:w-[80%] rounded bg-[#0C0E29] p-4 shadow-2xs right-4 top-[150px] sm:top-[220px]">
+                  <div class="flex items-center justify-between">
+                     <a class="text-md text-[#93F2FF] border border-[#FFFFFF1A] bg-[#93F2FF1A] rounded-full px-4 py-2"
+                        href="#">Teach Learn</a>
+                     <div class="text-white text-sm"><i class="fa-regular fa-clock"></i> 3min Read</div>
+                  </div>
+                  <h2 class="font-semibold sm:text-2xl text-white mt-2">A Comprehensive Guide to Building</h2>
+                  <div class="mt-2">
+                     <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                           <img class="w-8 h-8 rounded-full mr-2" src="/HTML//accests/img/post-four.png" alt="">
+                           <p class="text-sm text-white">Irin Pervin</p>
                         </div>
-                    </div>
-                </div>
+                        <p class="text-sm text-white">March 25, 2024</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </section>
-    </section>
-    <!-- === CONTACT SECTION === -->
-    <div class="w-60 mx-auto items-center mt-8">
-        <div class="flex items-center justify-between">
+         </section>
+      </section>
+      <!-- === CONTACT SECTION === -->
+      <div id="contact" class="w-60 mx-auto items-center mt-8">
+         <div class="flex items-center justify-between">
             <div class="w-3 h-3 border-l-2 border-t-2 border-gray-400"></div>
             <div class="w-3 h-3 border-r-2 border-t-2 border-gray-400"></div>
-        </div>
-        <h1 class="text-lg text-[#93F2FF] flex items-center justify-center">My Contact Information</h1>
-        <div class="flex items-center justify-between">
+         </div>
+         <h1 class="text-lg text-[#93F2FF] flex items-center justify-center">My Contact Information</h1>
+         <div class="flex items-center justify-between">
             <div class="w-3 h-3 border-l-2 border-b-2 border-gray-400"></div>
             <div class="w-3 h-3 border-r-2 border-b-2 border-gray-400"></div>
-        </div>
-    </div>
-    <h1 class="text-4xl font-bold text-white mt-[10px] flex items-center justify-center">Contact With Me</h1>
-    <section class="sm:flex sm:w-[80%] mx-auto items-start justify-start mt-8">
-        <section class="mt-[30px] sm:mt-0 px-4 sm:w-[65%]">
+         </div>
+      </div>
+      <h1 class="text-4xl font-bold text-white mt-[10px] flex items-center justify-center">Contact With Me</h1>
+      <section class="sm:flex sm:w-[80%] mx-auto items-start justify-start mt-8">
+         <section class="mt-[30px] sm:mt-0 px-4 sm:w-[65%]">
             <section class="w-full flex flex-col mx-auto bg-[#0E0E26] px-4 rounded mt-2xl mt-8 sm:mt-0 sm:p-8">
-                <div class="w-full flex flex-col gap-4 sm:gap-8">
-                    <h1 class="text-white text-2xl ">Send me a message</h1>
-                    <div class="flex flex-col gap-4 sm:gap-8 items-center justify-between">
-                        <input
-                            class="w-full text-mg text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
-                            type="text" placeholder="Your Name">
-                        <input
-                            class="w-full text-mg text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
-                            type="text" placeholder="Phone Number">
-                    </div>
-                    <input
-                        class="w-full text-md text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
-                        type="email" placeholder="Emial Adderess">
-                    <input
-                        class="w-full text-md text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
-                        type="text" placeholder="Your Subject">
-                    <textarea
-                        class="w-full text-md text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
-                        name="" id="" cols="10" rows="5" placeholder="Your Message"></textarea>
-                </div>
-                <div
-                    class="flex items-center justify-center text-[#070721] w-48 text-lg bg-[#93F2FF] mt-lg rounded-full mt-[10px] py-2">
-                    <button class="">Send message</button>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
+               <div class="w-full flex flex-col gap-4 sm:gap-8">
+                  <h1 class="text-white text-2xl ">Send me a message</h1>
+                  <div class="flex flex-col gap-4 sm:gap-8 items-center justify-between">
+                     <input
+                        class="w-full text-mg text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
+                        type="text" placeholder="Your Name">
+                     <input
+                        class="w-full text-mg text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
+                        type="text" placeholder="Phone Number">
+                  </div>
+                  <input
+                     class="w-full text-md text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
+                     type="email" placeholder="Emial Adderess">
+                  <input
+                     class="w-full text-md text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
+                     type="text" placeholder="Your Subject">
+                  <textarea
+                     class="w-full text-md text-white p-2 bg-transparent border border-[#FFFFFF1A] rounded focus:outline-none"
+                     name="" id="" cols="10" rows="5" placeholder="Your Message"></textarea>
+               </div>
+               <div
+                  class="flex items-center justify-center text-[#070721] w-48 text-lg bg-[#93F2FF] mt-lg rounded-full mt-[10px] py-2">
+                  <button class="">Send message</button>
+                  <i class="fa-solid fa-arrow-right"></i>
+               </div>
             </section>
-        </section>
-        <!-- === CONTACT RIGHT SECTION === -->
-        <section class="mx-4 sm:w-[35%]">
+         </section>
+         <!-- === CONTACT RIGHT SECTION === -->
+         <section class="mx-4 sm:w-[35%]">
             <section class="w-full p-4 sm:p-8 mt-[20px] sm:mt-0 bg-[#0E0E26]">
-            <section>
-                <section>
-                    <div class="bg-[#FFFFFF1A] w-[55px] h-[55px] rounded-full flex justify-center items-end">
+               <section>
+                  <section>
+                     <div class="bg-[#FFFFFF1A] w-[55px] h-[55px] rounded-full flex justify-center items-end">
                         <div class="bg-[#070824] w-[45px] h-[45px] rounded-full flex items-center justify-center">
-                            <div
-                                class="text-[#93F2FF] bg-[#93F2FF1A] border-4 border-[#FFFFFF1A] w-[40px] h-[40px] rounded-full flex items-center justify-center">
-                                <i class="fas-fa far fa-user"></i></div>
+                           <div
+                              class="text-[#93F2FF] bg-[#93F2FF1A] border-4 border-[#FFFFFF1A] w-[40px] h-[40px] rounded-full flex items-center justify-center">
+                              <i class="fas-fa far fa-user"></i>
+                           </div>
                         </div>
-                    </div>
-                </section>
-                <h1 class="text-white text-2xl font-bold mt-2">Get Support</h1>
-                <div class="text-white text-md mt-2">
-                    <p>If you want to communicate with live please Skype online contact me.</p>
-                </div>
-                <div class="text-white text-md mt-2">
-                    <p>Phone Number: 01322222224</p>
-                    <p>Phone Number: 01722222224</p>
-                </div>
-            </section>
-            <section class="mt-4">
-                <section>
-                    <div class="bg-[#FFFFFF1A] w-[55px] h-[55px] rounded-full flex justify-center items-end">
+                     </div>
+                  </section>
+                  <h1 class="text-white text-2xl font-bold mt-2">Get Support</h1>
+                  <div class="text-white text-md mt-2">
+                     <p>If you want to communicate with live please Skype online contact me.</p>
+                  </div>
+                  <div class="text-white text-md mt-2">
+                     <p>Phone Number: 01322222224</p>
+                     <p>Phone Number: 01722222224</p>
+                  </div>
+               </section>
+               <section class="mt-4">
+                  <section>
+                     <div class="bg-[#FFFFFF1A] w-[55px] h-[55px] rounded-full flex justify-center items-end">
                         <div class="bg-[#070824] w-[45px] h-[45px] rounded-full flex items-center justify-center">
-                            <div
-                                class="text-[#93F2FF] bg-[#93F2FF1A] border-4 border-[#FFFFFF1A] w-[40px] h-[40px] rounded-full flex items-center justify-center">
-                                <i class="fa-solid fa-envelope"></i></div>
+                           <div
+                              class="text-[#93F2FF] bg-[#93F2FF1A] border-4 border-[#FFFFFF1A] w-[40px] h-[40px] rounded-full flex items-center justify-center">
+                              <i class="fa-solid fa-envelope"></i>
+                           </div>
                         </div>
-                    </div>
-                </section>
-                <h1 class="text-white text-2xl font-bold mt-2">Communication With Mail</h1>
-                <div class="text-white text-md mt-2">
-                    <p>Please submit your email in my email and please as soon as possible.</p>
-                </div>
-                <div class="text-white text-md mt-2">
-                    <p>Email Address 01: admin@gmail.com</p>
-                    <p>Email Address 02: personal@gmail.com</p>
-                </div>
-            </section>
-            <section class="mt-4">
-                <section>
-                    <div class="bg-[#FFFFFF1A] w-[55px] h-[55px] rounded-full flex justify-center items-end">
+                     </div>
+                  </section>
+                  <h1 class="text-white text-2xl font-bold mt-2">Communication With Mail</h1>
+                  <div class="text-white text-md mt-2">
+                     <p>Please submit your email in my email and please as soon as possible.</p>
+                  </div>
+                  <div class="text-white text-md mt-2">
+                     <p>Email Address 01: admin@gmail.com</p>
+                     <p>Email Address 02: personal@gmail.com</p>
+                  </div>
+               </section>
+               <section class="mt-4">
+                  <section>
+                     <div class="bg-[#FFFFFF1A] w-[55px] h-[55px] rounded-full flex justify-center items-end">
                         <div class="bg-[#070824] w-[45px] h-[45px] rounded-full flex items-center justify-center">
-                            <div
-                                class="text-[#93F2FF] bg-[#93F2FF1A] border-4 border-[#FFFFFF1A] w-[40px] h-[40px] rounded-full flex items-center justify-center">
-                                <i class="fa-brands fa-rocketchat"></i></div>
+                           <div
+                              class="text-[#93F2FF] bg-[#93F2FF1A] border-4 border-[#FFFFFF1A] w-[40px] h-[40px] rounded-full flex items-center justify-center">
+                              <i class="fa-brands fa-rocketchat"></i>
+                           </div>
                         </div>
-                    </div>
-                </section>
-                <h1 class="text-white text-2xl font-bold mt-2">Want to Chat Now?</h1>
-                <div class="text-white text-md mt-2">
-                    <p>Chat with me its more experts of find out more and more informative</p>
-                </div>
-                <div
-                    class="flex items-center justify-center text-[#070721] w-64 text-lg bg-[#93F2FF] rounded-full mt-[10px] py-2 mt-6">
-                    <button class="">Open Chat With Me</button>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
+                     </div>
+                  </section>
+                  <h1 class="text-white text-2xl font-bold mt-2">Want to Chat Now?</h1>
+                  <div class="text-white text-md mt-2">
+                     <p>Chat with me its more experts of find out more and more informative</p>
+                  </div>
+                  <div
+                     class="flex items-center justify-center text-[#070721] w-64 text-lg bg-[#93F2FF] rounded-full mt-[10px] py-2 mt-6">
+                     <button class="">Open Chat With Me</button>
+                     <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+               </section>
             </section>
-        </section>
-        </section>
-    </section>
-    <!-- === FOOTER SECTION === -->
-     <footer class="bg-[#10102B] py-2 mt-8">
-        <section class="sm:w-[80%]  mt-8 p-4 sm:grid sm:grid-cols-4 mx-auto sm:justify-between">
+         </section>
+      </section>
+      <!-- === FOOTER SECTION === -->
+      <footer class="bg-[#10102B] py-2 mt-8">
+         <section class="sm:w-[80%]  mt-8 p-4 sm:grid sm:grid-cols-4 mx-auto sm:justify-between">
             <section class="mt-4">
-            <a href="#"><img class="w-40" src="/HTML/accests/img/softcode.png" alt=""></a>
-            <h1 class="text-white font-semibold text-2xl">Create something great <br> irin@example.com</h1>
-            <div class="flex items-center gap-4 sm:mt-4 mt-4">
-                <p
-                    class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                    <i class="fa-brands fa-facebook-f"></i></p>
-                <p
-                    class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                    <i class="fa-brands fa-linkedin-in"></i></p>
-                <p
-                    class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                    <i class="fa-brands fa-twitter"></i></p>
-                <p
-                    class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
-                    <i class="fa-brands fa-instagram"></i></p>
-            </div>
-        </section>
-        <!-- ============== -->
-        <section class="flex flex-col mt-4 gap-2">
-            <h1 class="text-semibold text-white text-xl">Product</h1>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">About me</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Database</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Photoshop</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Figma Design</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Adobe XD</a>
-        </section>
-        <section class="flex flex-col mt-4 gap-2">
-            <h1 class="text-semibold text-white text-xl">Resources</h1>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Support Center</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Terms of My Service</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Privecy and Policy</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">React Router</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Photoshop Design</a>
-        </section>
-        <section class="flex flex-col mt-4 gap-2">
-            <h1 class="text-semibold text-white text-xl">Developers</h1>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Contact Me</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">About Me</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Management</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Support Policy</a>
-            <a class="text-white text-md hover:text-[#93F2FF]" href="#">Adobe XD</a>
-        </section>
-        
-        </section>
-        <hr class="mt-4">
-        <p class="mt-4 text-white text-mg text-center">© 2025 All Rights Reserved by <a class="text-[#93F2FF] hover:text-white" href="#">Soft Code Loop</a></p>
-        <div class="footer-effet"></div>
-     </footer>
-    <!-- === JS LINK === -->
-    <script src="/HTML/accests/js/index.js"></script>
-</body>
-
+               <a href="#"><img class="w-40" src="/HTML/accests/img/softcode.png" alt=""></a>
+               <h1 class="text-white font-semibold text-2xl">Create something great <br> irin@example.com</h1>
+               <div class="flex items-center gap-4 sm:mt-4 mt-4">
+                  <p
+                     class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                     <i class="fa-brands fa-facebook-f"></i>
+                  </p>
+                  <p
+                     class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                  </p>
+                  <p
+                     class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                     <i class="fa-brands fa-twitter"></i>
+                  </p>
+                  <p
+                     class="text-[#93F2FF] text-sm h-[35px] w-[35px] border border-gray-500 items-center justify-center flex rounded-full hover:bg-[#93F2FF1A]">
+                     <i class="fa-brands fa-instagram"></i>
+                  </p>
+               </div>
+            </section>
+            <!-- ============== -->
+            <section class="flex flex-col mt-4 gap-2">
+               <h1 class="text-semibold text-white text-xl">Product</h1>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">About me</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Database</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Photoshop</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Figma Design</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Adobe XD</a>
+            </section>
+            <section class="flex flex-col mt-4 gap-2">
+               <h1 class="text-semibold text-white text-xl">Resources</h1>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Support Center</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Terms of My Service</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Privecy and Policy</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">React Router</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Photoshop Design</a>
+            </section>
+            <section class="flex flex-col mt-4 gap-2">
+               <h1 class="text-semibold text-white text-xl">Developers</h1>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Contact Me</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">About Me</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Management</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Support Policy</a>
+               <a class="text-white text-md hover:text-[#93F2FF]" href="#">Adobe XD</a>
+            </section>
+         </section>
+         <hr class="mt-4">
+         <p class="mt-4 text-white text-mg text-center">© 2025 All Rights Reserved by <a class="text-[#93F2FF] hover:text-white" href="#">Soft Code Loop</a></p>
+         <div class="footer-effet"></div>
+      </footer>
+      <!-- === JS LINK === -->
+      <script src="/HTML/accests/js/index.js"></script>
+   </body>
 </html>
